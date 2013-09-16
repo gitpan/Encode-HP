@@ -1,6 +1,6 @@
 package Encode::HP;
 use 5.007003;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 use Encode;
 use XSLoader;
 XSLoader::load(__PACKAGE__,$VERSION);
@@ -20,7 +20,7 @@ Encode::HP - Extra sets of HP encodings
 
 =head1 VERSION
 
-This document describes version 0.02 of Encode::HP, released September 15, 2013.
+This document describes version 0.03 of Encode::HP, released September 15, 2013.
 
 =head1 SYNOPSIS
 
@@ -56,12 +56,16 @@ This version also adds the following alises:
 
 =head1 UNSUPPORTED ENCODINGS
 
-The following are unsupported due to the lack of mapping data. If you have
-information on these or any other HP encodings, please provide them so they
-can be incorporated.
+The following are unsupported due to the lack of mapping data.
 
   '8'  - arabic8, hebrew8, and kana8 
   '15' - japanese15, korean15, and roi15
+
+If you have this information or access to an HP-UX system, please consider
+providing this data. Information on how to generate this data from an HP-UX
+system is available here:
+
+L<http://sourceware.org/bugzilla/show_bug.cgi?id=5464>.
 
 =head1 SEE ALSO
 
