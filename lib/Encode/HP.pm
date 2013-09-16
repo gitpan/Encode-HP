@@ -1,6 +1,6 @@
 package Encode::HP;
 use 5.007003;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use Encode;
 use XSLoader;
 XSLoader::load(__PACKAGE__,$VERSION);
@@ -20,7 +20,7 @@ Encode::HP - Extra sets of HP encodings
 
 =head1 VERSION
 
-This document describes version 0.01 of Encode::HP, released September 15, 2013.
+This document describes version 0.02 of Encode::HP, released September 15, 2013.
 
 =head1 SYNOPSIS
 
@@ -66,6 +66,8 @@ can be incorporated.
 =head1 SEE ALSO
 
 glibc charmaps: L<https://sourceware.org/git/?p=glibc.git;a=tree;f=localedata/charmaps>
+
+Generating a charmap from HP-UX: L<http://sourceware.org/bugzilla/show_bug.cgi?id=5464>
 
 L<Encode>
 
